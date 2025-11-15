@@ -1,0 +1,224 @@
+@import "./block/mixin";
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://www.shutterstock.com/image-illustration/abstract-aqua-color-smooth-plain-600nw-2161103189.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  height: auto;
+  padding: 50px 50px 10px;
+  margin: 80px auto;
+  width: 900px;
+  border-radius: 60px;
+  background-color: black;
+  &__header {
+    width: 100%;
+    @include bet;
+    margin: auto;
+    &-words {
+      @include bet;
+      gap: 50px;
+      &-word {
+        color: aqua;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+    &-burger {
+      width: 18px;
+      @include dis;
+      display: none;
+      flex-direction: column;
+      gap: 3px;
+      &-list {
+        width: 100%;
+        background-color: aqua;
+        height: 2px;
+      }
+    }
+  }
+  &__profile {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    &-h1 {
+      text-align: center;
+      color: aqua;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    &-p {
+      color: aqua;
+      font-size: 20px;
+    }
+    &-p1 {
+      font-size: 20px;
+      color: aqua;
+    }
+    &-p2 {
+      font-size: 20px;
+      color: aqua;
+    }
+    &-p3 {
+      font-size: 20px;
+      color: aqua;
+    }
+    &-p4 {
+      font-size: 20px;
+      color: aqua;
+    }
+    &-form {
+      padding-left: 50px;
+      padding-right: 50px;
+      @include dis;
+      align-items: start;
+      gap: 20px;
+      flex-wrap: wrap;
+      &-div {
+        width: 40%;
+        @include dis;
+        align-items: start;
+        gap: 5px;
+        flex-direction: column;
+        &-p {
+          font-size: 15px;
+          color: aqua;
+        }
+        &-input {
+          margin-left: 10px;
+          width: 100%;
+          height: 30px;
+          background-color: black;
+          border: 2px aqua solid;
+          border-radius: 5px;
+          color: aqua;
+          padding-left: 20px;
+        }
+        &-input1 {
+          margin-left: 10px;
+          width: 100%;
+          height: 30px;
+          background-color: black;
+          border: 2px aqua solid;
+          border-radius: 5px;
+          color: aqua;
+          padding-left: 20px;
+        }
+        &-input2 {
+          margin-left: 10px;
+          width: 100%;
+          height: 30px;
+          background-color: black;
+          border: 2px aqua solid;
+          border-radius: 5px;
+          color: aqua;
+          padding-left: 20px;
+        }
+        &-input3 {
+          margin-left: 10px;
+          width: 100%;
+          height: 30px;
+          background-color: black;
+          border: 2px aqua solid;
+          border-radius: 5px;
+          color: aqua;
+          padding-left: 20px;
+        }
+        &-input4 {
+          margin-left: 10px;
+          width: 100%;
+          height: 30px;
+          background-color: black;
+          border: 2px aqua solid;
+          border-radius: 5px;
+          color: aqua;
+          padding-left: 20px;
+        }
+      }
+      &-buttons {
+        @include bet;
+        width: 100%;
+        &-save {
+          width: 40%;
+          height: 35px;
+          background-color: aqua;
+          border: none;
+          border-radius: 10px;
+          transition: all 0.2s ease;
+          color: black;
+          font-size: 15px;
+          font-weight: 500;
+          &:hover {
+            border: 2px solid aqua;
+            background-color: black;
+            color: aqua;
+          }
+        }
+        &-reset {
+          width: 40%;
+          height: 35px;
+          background-color: black;
+          border: 3px solid aqua;
+          border-radius: 10px;
+          color: aqua;
+          font-weight: 500;
+          font-size: 15px;
+          transition: all 0.3s ease;
+          &:hover {
+            border: none;
+            background-color: aqua;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  &__footer {
+    width: 100%;
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include bet;
+    &-h2 {
+      font-size: 20px;
+      color: aqua;
+      font-weight: 500;
+    }
+    &-p {
+      color: aqua;
+      font-weight: 500;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    padding: 20px 20px 10px;
+    width: 100%;
+    &__header {
+      &-words {
+        display: none;
+      }
+      &-burger {
+        display: flex;
+      }
+    }
+    &__profile {
+      &-h1 {
+        font-size: 30px;
+      }
+      &-form {
+        padding: 0%;
+      }
+    }
+  }
+}

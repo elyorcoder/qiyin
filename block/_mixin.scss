@@ -1,0 +1,10 @@
+@mixin bet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin dis{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
