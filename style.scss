@@ -77,6 +77,10 @@ body {
       font-size: 20px;
       color: aqua;
     }
+    &-p5 {
+      font-size: 20px;
+      color: aqua;
+    }
     &-form {
       padding-left: 50px;
       padding-right: 50px;
@@ -84,6 +88,35 @@ body {
       align-items: start;
       gap: 20px;
       flex-wrap: wrap;
+      &-genders {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        &-gender {
+          width: 30%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: aqua;
+          color: black;
+          transition: all ease 0.2s;
+          border-radius: 20px;
+        }
+        &-genderoy {
+          width: 30%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: aqua;
+          color: black;
+          transition: all ease 0.2s;
+          border-radius: 20px;
+        }
+      }
       &-div {
         width: 40%;
         @include dis;
